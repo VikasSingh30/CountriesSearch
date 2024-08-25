@@ -24,7 +24,7 @@ const CountryCards = ({ name, flagImg, flagAlt }) => {
 };
 
 export default function Countries() {
-  const API = "https://xcountries-backend.azurewebsites.net/all";
+  const API = "https://restcountries.com/v3.1/all";
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
