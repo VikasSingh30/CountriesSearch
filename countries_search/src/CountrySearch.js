@@ -55,7 +55,8 @@ export default function Countries() {
   };
 
   const filteredCountries = countries.filter((country) =>
-    country.name.toLowerCase().includes(searchTerm)
+    country.name.common.toLowerCase().includes(searchTerm)
+    // country.name.toLowerCase().includes(searchTerm)
   );
 
   if (loading) {
